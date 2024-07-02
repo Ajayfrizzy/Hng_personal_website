@@ -1,83 +1,104 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    max-width: 80vw;
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: rgb(38, 37, 37);
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 10vh;
+  font-size: 1.2rem;
+}
+
+header > div:first-child {
+  margin-right: 0.5rem;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.bold span {
+  font-weight: 500;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+}
+
+article {
+  margin-left: 2rem;
+}
+
+article > p:first-child {
+  padding-bottom: 1rem;
+}
+
+article > p:last-child span {
+  text-decoration: underline;
+}
+
+.goals {
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+}
+
+li {
+  list-style-type: square;
+  padding: 0.2rem 0;
+}
+
+.link {
+  font-size: 1.2rem;
+}
+
+.link p {
+  padding: 0.2rem 0;
+}
+
+a {
+  text-decoration: underline;
+  color: aqua;
+}
+
+a:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 600px), (max-width: 760px) {
+  header {
+    justify-content: center;
+    height: 7vh;
+  }
+  .hero-container {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+  }
+
+  article {
     margin: 0 auto;
-    background-color: rgb(38, 37, 37);
-    color: #fff;
-}
+    text-align: center;
+  }
 
-header{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 10vh;
-    font-size: 1.2rem;
+  .img {
+    margin: auto;
+  }
 }
-
-header>div:first-child{
-    margin-right: 0.5rem;
-}
-
-.bold{
-    font-weight: 800;
-}
-
-.bold span{
-    font-weight: 500;
-}
-
-.hero-container{
-    display: flex;
-    align-items: center;
-    margin-top: 4rem;
-    font-size: 1.2rem;
-}
-
-article{
-    margin-left: 2rem;
-}
-
-article>p:first-child{
-    padding-bottom: 1rem;
-}
-
-article>p:last-child span{
-    text-decoration: underline;
-}
-
-.goals{
-    margin: 3rem 0;
-    font-size: 1.2rem;
-}
-
-h2{
-    margin-bottom: 0.8rem;
-}
-
-li{
-    list-style-type: square;
-    padding: 0.2rem 0;
-}
-
-.link{
-    font-size: 1.2rem;
-}
-
-.link p{
-    padding: .2rem 0;
-}
-
-a{
-    text-decoration: underline;
-    color: aqua;
-}
-
-a:hover{
-    color: blue;
-}
-
